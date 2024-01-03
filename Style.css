@@ -1,0 +1,36 @@
+body, a {background: #ffffff; color: #083347; font-family: 'Merriweather Sans', sans-serif; font-weight: 300}
+h1 {text-align: center; font-weight: 300; font-family: 'Merriweather', serif; margin: 50px auto 50px; position: relative; font-size: 32px; color: #F55321;}
+//h1:after {content:''; display: block; width:42px; bottom: -30px; height: 4px; background: #F55321; left: 50%; margin-left: -21px; position: absolute}
+.claim {width: 90%; max-width: 400px; font-style: italic;  text-align: center; margin: 100px auto; font-size: 18px; }
+.claim .logo {font-family: 'Merriweather', serif; font-style: normal;}
+.logo strong {font-weight: 900; color: #083347}
+.language-switch {position: absolute; top: 10px; right: 20px; font-size: 80%}
+.language-switch em {font-style: normal;font-weight: bold; }
+
+strong {font-weight: 900}
+a {text-decoration: none; border-bottom: 1px solid #F55321}
+a:hover {color: #F55321; border-bottom-color: #F55321}
+.whoweare {width: 80%; margin: 0 auto; display:flex; flex-direction: column}
+.coach {text-align: center;}
+.coach__photo {border: 2px solid}
+.coach + .coach .coach__photo {border-color: #F55321}
+
+.coach__name {font-family: 'Merriweather', serif; font-weight: 300; font-size: 18px; text-align: center}
+.coach__description {font-size: 16px; text-align: left; font-style: italic}
+.coach__photo {width: 50%; border-radius: 50%;}
+.getintouch {text-align: center; margin: 100px auto 50px;}
+
+.manifesto {width: 80%; margin: 0 auto; display:flex; flex-direction: column; flex-wrap:wrap}
+.manifesto h2 {width: 100%; flex-basis: 100%;  margin-top: 80px; position: relative; font-size: 160%; font-family: 'Merriweather', serif;}
+.manifesto .standard {flex-basis: 45%; }
+.manifesto h3 {font-weight: bold;font-family: 'Merriweather', serif;}
+.manifesto h3 span {display: block; font-weight: 100;  font-size: 80%; }
+
+@media screen and (min-width: 40em) { 
+    .claim {font-style: italic; width: 400px; text-align: center; margin: 100px auto; font-size: 18px}
+    .whoweare {max-width: 800px; width: 80%; margin: 0 auto; display: flex; flex-direction: row}
+    .manifesto {max-width: 800px;width: 80%;margin: 0 auto; display: flex; flex-direction: row}
+    .coach {width: 45%;}
+    .coach + .coach, .manifesto div:nth-of-type(even) {margin-left: 10%}
+    .coach__description {font-size: 16px;}
+}
